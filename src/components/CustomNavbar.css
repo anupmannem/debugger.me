@@ -1,0 +1,29 @@
+.collapse:not(.show) {
+  display: none;
+}
+
+.justify-content-end {
+  -webkit-justify-content: flex-end !important;
+  justify-content: flex-end !important;
+}
+
+.navbar-collapse {
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+	padding: 5px;
+	margin-right: 50px;
+}

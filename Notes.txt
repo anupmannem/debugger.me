@@ -1,0 +1,33 @@
+installation 
+  npm install
+  react-bootstrap
+  npm install react-bootstrap bootstrap
+
+  include below css file to index.html 
+  <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+  />
+
+  component reference - 
+    https://react-bootstrap.github.io/components/alerts/
+
+importing components
+  - look at the documentation
+  - identify the parent element tag
+  ex - <Form></Form>
+  - import { Form } from 'react-bootstrap'
+  - now Form.Label, Form.Row ... will be available
+
+adding a link to button
+  <Link to='endpoint'>
+    <Button variant='primary'>Proceed</Button>
+  </Link>
+  - import { Link } from 'react-router'
+
+routing the link using 'react-router'
+  - import { BrowserRouter } from 'react-router'
+  - import the components to render
+  - <Route exact path='target endpoint' component={component to render} />

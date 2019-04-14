@@ -1,31 +1,30 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import {
-  Jumbotron,
-  Container,
+import { 
+  Jumbotron, 
+  Container, 
   Button,
   CardGroup,
-  Card
-} from 'react-bootstrap'
+  Card } from 'react-bootstrap'
 
 import './Home.css'
 
-{ /* Components */ }
+                { /* Components */ }
 export default class Home extends Component {
   render() {
     return (
       <div>
         <Container>
-          { /* Jumbo Banner */}
+                { /* Jumbo Banner */ }
           <Jumbotron>
             <h2>Welcome to debugger.me</h2>
-            <p>A platform where talented individuals help you improve your product
+            <p>A platform where talented individuals help you improve your product 
               by finding and resolving bugs in your code
             </p>
           </Jumbotron>
 
-          { /* card for Hacker signup */}
+                { /* card for Hacker signup */ }
           <CardGroup>
             <Card>
               <Card.Header>HACKER Signup</Card.Header>
@@ -38,10 +37,10 @@ export default class Home extends Component {
                 <Link to='/signup-hacker'>
                   <Button variant='primary' size='sm'>Proceed</Button>
                 </Link>
-              </Card.Footer>
+              </Card.Footer>              
             </Card>
 
-            {/* card for organization signup */}
+                {/* card for organization signup */}
             <Card>
               <Card.Header>Organization Signup</Card.Header>
               <Card.Body>
@@ -49,22 +48,15 @@ export default class Home extends Component {
                   If you are an organization please click here to proceed to signup
                 </Card.Title>
               </Card.Body>
-              <Card.Footer>
+              <Card.Footer>              
                 <Link to='/signup-organization'>
                   <Button variant='primary' size='sm'>Proceed</Button>
-                </Link>
+                </Link>            
               </Card.Footer>
 
             </Card>
           </CardGroup>
-          <br /><br />
-          <span>
-            Already have an account?
-            <Link to='/login'>
-              <Button variant='primay'>Login</Button>
-            </Link>
-          </span>
-        </Container>
+        </Container>          
       </div>
     )
   }

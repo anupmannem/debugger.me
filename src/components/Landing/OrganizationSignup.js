@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import { Form, Container, Col, Button } from 'react-bootstrap'
+import { Form, Container, Col, Button, InputGroup } from 'react-bootstrap'
 
                 { /* Components */ }
 export default class OrganizationSignup extends Component {
   render() {
     return (
-      <Container>
+      <Container style={{'margin-top': 100}}>
         <Form>
 
               { /* First Name & Last Name*/ }
@@ -58,6 +58,16 @@ export default class OrganizationSignup extends Component {
                 placeholder='Confirm Password'
               />
             </Form.Group>
+          </Form.Row>
+
+            { /* About Organization */ }
+          <Form.Row>
+            <InputGroup className='mb-3'>
+              <InputGroup.Prepend>
+                <InputGroup.Text>About Us</InputGroup.Text>
+              </InputGroup.Prepend>
+              <Form.Control as='textarea' aria-label='aboutus' />
+            </InputGroup>
           </Form.Row>
 
               { /* Terms and submit */ }

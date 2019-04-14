@@ -6,7 +6,7 @@ export default class About extends Component {
     return (
       <Container>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-          <Row>
+          <Row style={{'margin-top': 100}}>
             {/* tabbed menu titles */ }
             <Col sm={3}>            
               <Nav.Item>
